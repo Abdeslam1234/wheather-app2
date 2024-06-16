@@ -1,0 +1,152 @@
+body {
+  overflow: hidden;
+}
+.pinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.662);
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url(./component/backround.png);
+  background-size: 100%;
+  background-position: top;
+}
+.pinfo h1 {
+  font-size: 28px;
+  color: #fff;
+}
+.pinfo p {
+  font-size: 18px;
+  color: #fff;
+}
+.container {
+  padding-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(3, 23, 61);
+  /* background-image: url(./component/iphon.png); */
+  background-size: 60%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.weather {
+  width: 300px;
+
+  padding: 30px;
+  text-align: center;
+  color: black;
+  font-size: x-large;
+  border-radius: 50px;
+  margin: 50px auto;
+  background: linear-gradient(130deg, rgb(86, 86, 235), rgb(5, 5, 199));
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+img {
+  width: 20px;
+}
+button {
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 30px;
+  border: none;
+  outline: 0;
+  font-size: 18px;
+  padding: 12px 25px;
+  background-color: rgb(222, 237, 243);
+  color: black;
+  font-weight: bolder;
+  flex: 1;
+  margin-right: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.info img {
+  margin-top: 20px;
+  width: 250px;
+}
+.info h1 {
+  font-size: 70px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.info h2 {
+  font-size: 40px;
+  margin-top: -40px;
+  font-weight: 400;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 20px; */
+  margin-top: 50px;
+  gap: 0px;
+}
+.col img {
+  width: 65px;
+  margin-right: 10px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.humidity,
+.wind {
+  font-size: 27px;
+  font-weight: bolder;
+}
+.humidity p,
+.wind p {
+  margin: 0px;
+}
+
+@media (max-width: 480px) {
+  .pinfo {
+    padding: 10px 15px;
+  }
+
+  .container {
+    padding-top: 30px;
+  }
+
+  .info h1 {
+    font-size: 2rem;
+  }
+
+  .info h2 {
+    font-size: 1.25rem;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 1rem;
+  }
+
+  .col img {
+    width: 50px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+  }
+
+  input {
+    font-size: 0.875rem;
+    padding: 10px 20px;
+  }
+}
